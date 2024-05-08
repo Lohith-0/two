@@ -1,0 +1,59 @@
+<html>
+ <body>
+	<form>
+	<table border="2" cellspacing="5" cellpadding="5"> 
+ <tr>
+  <td colspan="4"><input type="text" id="r"></td>
+ </tr>
+ <tr>
+ <td colspan="2"><input type="number" id="x" placeholder="ENTER THE NUMBER"></td>
+ <td colspan="2"><input type="number" id="y" placeholder="ENTER THE NUMBER"></td>
+</tr>
+ <tr>
+ <td><input type="button" onclick="add()" value="add"></td>
+ <td><input type="button" onclick="sub()" value="sub"></td>
+ <td><input type="button" onclick="mul()" value="mul"></td>
+ <td><input type="button" onclick="div()" value="div"></td>
+ </tr>
+  
+   </form>
+  </table> 
+  <script type="text/javascript">
+  function add()
+   {
+    var x=document.getElementById('x').value;
+    var y=document.getElementById('y').value;
+    
+    
+		 document.getElementById('r').value=(parseInt(x)+parseInt(y));
+    }
+  function sub()
+   {
+    var x=document.getElementById('x').value;
+    var y=document.getElementById('y').value;
+    
+    
+		 document.getElementById('r').value=(parseInt(x)-parseInt(y));
+    }
+  function mul()
+   {
+    var x=document.getElementById('x').value;
+    var y=document.getElementById('y').value;
+    
+    
+		 document.getElementById('r').value=(parseInt(x)*parseInt(y));
+    }
+  function div()
+   {
+    var x=document.getElementById('x').value;
+    var y=document.getElementById('y').value;
+    
+    
+		 document.getElementById('r').value=(parseInt(x)/parseInt(y));
+    }
+     
+     
+  </script>
+ </body>
+
+</html>
